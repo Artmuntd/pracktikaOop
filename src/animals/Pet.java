@@ -34,7 +34,7 @@ public abstract class  Pet {
         return name;
     }
 
-    public void setName(String name) {
+    public final  void setName(String name) {
        if(name != null && !name.isEmpty() && !name.isBlank()){
            this.name = name;
        }

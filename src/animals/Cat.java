@@ -2,7 +2,7 @@ package animals;
 
 import java.time.LocalDate;
 
-public class Cat  extends Pet{
+public  final class Cat  extends Pet{
 
     private  Cat [] friends;
 
@@ -54,7 +54,11 @@ public class Cat  extends Pet{
         System.out.println(" мне лет"  );
     }
 
+    @Override
+    public void setName(String name) {
 
+
+    }
 
     public Cat[] getFriends() {
         return friends;
