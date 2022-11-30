@@ -2,9 +2,10 @@ package animals;
 
 import java.time.LocalDate;
 
-public  final class Cat  extends Pet{
+public  final class Cat  extends Pet implements Trained{
 
     private  Cat [] friends;
+
 
     public  static  class  Breed {
         private  String name;
@@ -67,4 +68,24 @@ public  final class Cat  extends Pet{
     public void setFriends(Cat[] friends) {
         this.friends = friends;
     }
+    @Override
+    public String[] getTrainedCommands() {
+        return new String[0];
+    }
+
+    @Override
+    public String[] getAllComands() {
+        return new String[0];
+    }
+
+    @Override
+    public void doCommand(String command) {
+
+    }
+
+    @Override
+    public void train(String command) {
+
+    }
+
 }

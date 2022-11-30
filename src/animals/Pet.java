@@ -22,9 +22,16 @@ public abstract class  Pet {
     }
 
     public  void  talk(){
-        System.out.println("hello");
+        System.out.println("Голос");
+    }
+    public  void  talk(String word){
+
+        System.out.println(word);
+        System.out.println("Голос");
     }
     public abstract void eat();
+
+
 
    public int getAge(){
         return  LocalDate.now().getYear() - birthYear;
@@ -34,7 +41,7 @@ public abstract class  Pet {
         return name;
     }
 
-    public final  void setName(String name) {
+    public    void setName(String name) {
        if(name != null && !name.isEmpty() && !name.isBlank()){
            this.name = name;
        }

@@ -16,6 +16,12 @@ public class Parrot extends Pet {
     public void talk(){
         System.out.println("я говорю");
     }
+    public void talk(String... words){
+        talk();
+        for (String word : words){
+            System.out.println(word);
+        }
+    }
 
     @Override
     public void eat() {
